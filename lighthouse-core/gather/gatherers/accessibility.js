@@ -33,14 +33,9 @@ function runA11yChecks() {
     runOnly: {
       type: 'rule',
       values: [
-        'aria-allowed-attr',
-        'aria-required-attr',
-        'aria-valid-attr',
-        'aria-valid-attr-value',
         'color-contrast',
-        'image-alt',
-        'label',
-        'tabindex'
+        'tabindex',
+        'wcag2a'
       ]
     }
   });
