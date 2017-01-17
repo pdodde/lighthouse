@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2016 Google Inc. All rights reserved.
+ * Copyright 2017 Google Inc. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,13 +18,13 @@
 'use strict';
 
 /**
- * @fileoverview Ensures ARIA attributes are allowed for an element's role.
+ * @fileoverview Ensures ARIA attributes are allowed for an element's role
  * See base class in axe-audit.js for audit() implementation.
  */
 
 const AxeAudit = require('./axe-audit');
 
-class ARIAAllowedAttr extends AxeAudit {
+class AriaAllowedAttr extends AxeAudit {
   /**
    * @return {!AuditMeta}
    */
@@ -32,10 +32,10 @@ class ARIAAllowedAttr extends AxeAudit {
     return {
       category: 'Accessibility',
       name: 'aria-allowed-attr',
-      description: 'Element aria-* attributes are allowed for this role',
+      description: 'Ensures ARIA attributes are allowed for an element\'s role',
       requiredArtifacts: ['Accessibility']
     };
   }
 }
 
-module.exports = ARIAAllowedAttr;
+module.exports = AriaAllowedAttr;

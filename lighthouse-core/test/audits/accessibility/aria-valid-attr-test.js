@@ -64,7 +64,6 @@ describe('Accessibility: aria-valid-attr audit', () => {
     };
 
     const output = Audit.audit(artifacts);
-    assert.equal(output.description,
-        'Element aria-* attributes are valid and not misspelled or non-existent.');
+    assert.equal(output.description, 'Ensures attributes that begin with aria- are valid ARIA attributes');
   });
 });

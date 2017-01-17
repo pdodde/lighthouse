@@ -16,17 +16,17 @@
  */
 'use strict';
 
-const Audit = require('../../../audits/accessibility/aria-required-attr.js');
+const Audit = require('../../../audits/accessibility/aria-roles.js');
 const assert = require('assert');
 
 /* eslint-env mocha */
 
-describe('Accessibility: aria-required-attr audit', () => {
+describe('Accessibility: aria-roles audit', () => {
   it('generates an audit output', () => {
     const artifacts = {
       Accessibility: {
         violations: [{
-          id: 'aria-required-attr',
+          id: 'aria-roles',
           nodes: [],
           help: 'http://example.com/'
         }]
@@ -43,7 +43,7 @@ describe('Accessibility: aria-required-attr audit', () => {
     const artifacts = {
       Accessibility: {
         violations: [{
-          id: 'aria-required-attr',
+          id: 'aria-roles',
           nodes: [{}],
           help: 'http://example.com/'
         }]
@@ -64,6 +64,6 @@ describe('Accessibility: aria-required-attr audit', () => {
     };
 
     const output = Audit.audit(artifacts);
-    assert.equal(output.description, 'Ensures elements with ARIA roles have all required ARIA attributes');
+    assert.equal(output.description, 'Ensures all elements with a role attribute use a valid value');
   });
 });

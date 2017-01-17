@@ -18,24 +18,24 @@
 'use strict';
 
 /**
- * @fileoverview Ensures <img> elements have alternate text or a role of none or presentation
+ * @fileoverview Ensures every id attribute value is unique
  * See base class in axe-audit.js for audit() implementation.
  */
 
 const AxeAudit = require('./axe-audit');
 
-class ImageAlt extends AxeAudit {
+class DuplicateId extends AxeAudit {
   /**
    * @return {!AuditMeta}
    */
   static get meta() {
     return {
       category: 'Accessibility',
-      name: 'image-alt',
-      description: 'Ensures <img> elements have alternate text or a role of none or presentation',
+      name: 'duplicate-id',
+      description: 'Ensures every id attribute value is unique',
       requiredArtifacts: ['Accessibility']
     };
   }
 }
 
-module.exports = ImageAlt;
+module.exports = DuplicateId;

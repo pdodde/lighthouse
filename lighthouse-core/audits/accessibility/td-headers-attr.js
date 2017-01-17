@@ -18,24 +18,24 @@
 'use strict';
 
 /**
- * @fileoverview Ensures <img> elements have alternate text or a role of none or presentation
+ * @fileoverview Ensure that each cell in a table using the headers refers to another cell in that table
  * See base class in axe-audit.js for audit() implementation.
  */
 
 const AxeAudit = require('./axe-audit');
 
-class ImageAlt extends AxeAudit {
+class TdHeadersAttr extends AxeAudit {
   /**
    * @return {!AuditMeta}
    */
   static get meta() {
     return {
       category: 'Accessibility',
-      name: 'image-alt',
-      description: 'Ensures <img> elements have alternate text or a role of none or presentation',
+      name: 'td-headers-attr',
+      description: 'Ensure that each cell in a table using the headers refers to another cell in that table',
       requiredArtifacts: ['Accessibility']
     };
   }
 }
 
-module.exports = ImageAlt;
+module.exports = TdHeadersAttr;

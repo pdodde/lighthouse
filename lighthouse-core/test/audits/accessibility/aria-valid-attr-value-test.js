@@ -64,6 +64,6 @@ describe('Accessibility: aria-valid-attr-value audit', () => {
     };
 
     const output = Audit.audit(artifacts);
-    assert.equal(output.description, 'Element aria-* attributes have valid values');
+    assert.equal(output.description, 'Ensures all ARIA attributes have valid values');
   });
 });

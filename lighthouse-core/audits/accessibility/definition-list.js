@@ -18,24 +18,24 @@
 'use strict';
 
 /**
- * @fileoverview Ensures <img> elements have alternate text or a role of none or presentation
+ * @fileoverview Ensures <dl> elements are structured correctly
  * See base class in axe-audit.js for audit() implementation.
  */
 
 const AxeAudit = require('./axe-audit');
 
-class ImageAlt extends AxeAudit {
+class DefinitionList extends AxeAudit {
   /**
    * @return {!AuditMeta}
    */
   static get meta() {
     return {
       category: 'Accessibility',
-      name: 'image-alt',
-      description: 'Ensures <img> elements have alternate text or a role of none or presentation',
+      name: 'definition-list',
+      description: 'Ensures <dl> elements are structured correctly',
       requiredArtifacts: ['Accessibility']
     };
   }
 }
 
-module.exports = ImageAlt;
+module.exports = DefinitionList;

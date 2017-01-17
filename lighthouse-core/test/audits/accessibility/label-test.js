@@ -64,6 +64,6 @@ describe('Accessibility: label audit', () => {
     };
 
     const output = Audit.audit(artifacts);
-    assert.equal(output.description, 'Every form element has a label');
+    assert.equal(output.description, 'Ensures every form element has a label');
   });
 });

@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2016 Google Inc. All rights reserved.
+ * Copyright 2017 Google Inc. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,13 +18,13 @@
 'use strict';
 
 /**
- * @fileoverview Ensures aria-* attributes are valid and not misspelled or non-existent.
+ * @fileoverview Ensures attributes that begin with aria- are valid ARIA attributes
  * See base class in axe-audit.js for audit() implementation.
  */
 
 const AxeAudit = require('./axe-audit');
 
-class ARIAValidAttr extends AxeAudit {
+class AriaValidAttr extends AxeAudit {
   /**
    * @return {!AuditMeta}
    */
@@ -32,10 +32,10 @@ class ARIAValidAttr extends AxeAudit {
     return {
       category: 'Accessibility',
       name: 'aria-valid-attr',
-      description: 'Element aria-* attributes are valid and not misspelled or non-existent.',
+      description: 'Ensures attributes that begin with aria- are valid ARIA attributes',
       requiredArtifacts: ['Accessibility']
     };
   }
 }
 
-module.exports = ARIAValidAttr;
+module.exports = AriaValidAttr;

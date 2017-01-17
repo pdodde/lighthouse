@@ -64,6 +64,6 @@ describe('Accessibility: image-alt audit', () => {
     };
 
     const output = Audit.audit(artifacts);
-    assert.equal(output.description, 'Every image element has an alt attribute');
+    assert.equal(output.description, 'Ensures <img> elements have alternate text or a role of none or presentation');
   });
 });

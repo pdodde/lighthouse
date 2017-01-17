@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2016 Google Inc. All rights reserved.
+ * Copyright 2017 Google Inc. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
 'use strict';
 
 /**
- * @fileoverview Ensures every form element has a label.
+ * @fileoverview Ensures every form element has a label
  * See base class in axe-audit.js for audit() implementation.
  */
 
@@ -32,7 +32,7 @@ class Label extends AxeAudit {
     return {
       category: 'Accessibility',
       name: 'label',
-      description: 'Every form element has a label',
+      description: 'Ensures every form element has a label',
       requiredArtifacts: ['Accessibility']
     };
   }
