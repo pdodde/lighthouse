@@ -30,7 +30,6 @@
     "passName": "dbw",
     "gatherers": [
       "styles",
-      "css-usage",
       "dobetterweb/all-event-listeners",
       "dobetterweb/anchors-with-no-rel-noopener",
       "dobetterweb/appcache",
@@ -39,7 +38,6 @@
       "dobetterweb/document-write",
       "dobetterweb/geolocation-on-start",
       "dobetterweb/notification-on-start",
-      "dobetterweb/optimized-images",
       "dobetterweb/tags-blocking-first-paint",
       "dobetterweb/websql"
     ]
@@ -70,16 +68,30 @@
     "manifest-short-name-length",
     "manifest-start-url",
     "theme-color-meta",
-    "unused-css-rules",
     "content-width",
+    "accessibility/accesskeys",
+    "accessibility/area-alt",
     "accessibility/aria-allowed-attr",
+    "accessibility/aria-roles",
     "accessibility/aria-required-attr",
+    "accessibility/aria-required-children",
+    "accessibility/aria-required-parent",
     "accessibility/aria-valid-attr-value",
     "accessibility/aria-valid-attr",
+    "accessibility/audio-caption",
+    "accessibility/blink",
+    "accessibility/button-name",
+    "accessibility/bypass",
     "accessibility/color-contrast",
+    "accessibility/definition-list",
+    "accessibility/dlitem",
+    "accessibility/document-title",
     "accessibility/image-alt",
     "accessibility/label",
     "accessibility/tabindex",
+    "accessibility/html-has-lang",
+    "accessibility/html-lang-valid",
+    "accessibility/frame-title",
     "dobetterweb/external-anchors-use-rel-noopener",
     "dobetterweb/appcache-manifest",
     "dobetterweb/geolocation-on-start",
@@ -93,7 +105,6 @@
     "dobetterweb/notification-on-start",
     "dobetterweb/script-blocking-first-paint",
     "dobetterweb/uses-http2",
-    "dobetterweb/uses-optimized-images",
     "dobetterweb/uses-passive-event-listeners"
   ],
 
@@ -289,12 +300,6 @@
         }
       }
     }, {
-      "name": "Using bytes efficiently",
-      "audits": {
-        "unused-css-rules": {},
-        "uses-optimized-images": {}
-      }
-    }, {
       "name": "Using modern CSS features",
       "audits": {
         "no-old-flexbox": {
@@ -365,6 +370,66 @@
           "weight": 1
         },
         "tabindex": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "aria-required-children": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "accesskeys": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "area-alt": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "aria-roles": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "aria-required-parent": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "audio-caption": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "blink": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "button-name": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "bypass": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "definition-list": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "dlitem": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "document-title": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "html-has-lang": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "html-lang-valid": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "frame-title": {
           "expectedValue": true,
           "weight": 1
         }

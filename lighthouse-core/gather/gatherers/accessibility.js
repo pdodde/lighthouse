@@ -31,17 +31,8 @@ const axe = fs.readFileSync(
 function runA11yChecks() {
   return axe.run(document, {
     runOnly: {
-      type: 'rule',
-      values: [
-        'aria-allowed-attr',
-        'aria-required-attr',
-        'aria-valid-attr',
-        'aria-valid-attr-value',
-        'color-contrast',
-        'image-alt',
-        'label',
-        'tabindex'
-      ]
+      type: 'tag',
+      values:['wcag2a']
     }
   });
 }
