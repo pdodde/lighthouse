@@ -76,7 +76,6 @@
     "accessibility/aria-required-attr",
     "accessibility/aria-required-children",
     "accessibility/aria-required-parent",
-    "accessibility/aria-roles",
     "accessibility/aria-valid-attr-value",
     "accessibility/aria-valid-attr",
     "accessibility/audio-caption",
@@ -90,6 +89,9 @@
     "accessibility/image-alt",
     "accessibility/label",
     "accessibility/tabindex",
+    "accessibility/html-has-lang",
+    "accessibility/html-lang-valid",
+    "accessibility/frame-title",
     "dobetterweb/external-anchors-use-rel-noopener",
     "dobetterweb/appcache-manifest",
     "dobetterweb/geolocation-on-start",
@@ -368,6 +370,66 @@
           "weight": 1
         },
         "tabindex": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "aria-required-children": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "accesskeys": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "area-alt": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "aria-roles": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "aria-required-parent": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "audio-caption": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "blink": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "button-name": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "bypass": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "definition-list": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "dlitem": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "document-title": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "html-has-lang": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "html-lang-valid": {
+          "expectedValue": true,
+          "weight": 1
+        },
+        "frame-title": {
           "expectedValue": true,
           "weight": 1
         }

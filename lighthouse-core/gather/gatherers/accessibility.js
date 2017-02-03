@@ -31,12 +31,8 @@ const axe = fs.readFileSync(
 function runA11yChecks() {
   return axe.run(document, {
     runOnly: {
-      type: 'rule',
-      values: [
-        'color-contrast',
-        'tabindex',
-        'wcag2a'
-      ]
+      type: 'tag',
+      values:['wcag2a']
     }
   });
 }
